@@ -19,7 +19,7 @@ body::-webkit-scrollbar-track
 body::-webkit-scrollbar
 {
     width: 12px;
-    background-color: gray;
+    background:transparent;
     opacity: 0.7;
 }
 
