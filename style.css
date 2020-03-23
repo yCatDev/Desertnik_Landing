@@ -61,7 +61,7 @@ a {
 .regular_text
 {
     text-align: center;
-    font-size: 18pt;
+    font-size: 20pt;
 
 }
 .text_right
@@ -114,7 +114,7 @@ a {
 {
     text-align: right;
     font-family: 'Alice', serif;
-    font-size: 12pt;
+    font-size: 18pt;
     padding-right: 25px;
 }
 .old_price_font
@@ -171,7 +171,7 @@ a {
 .stock_font
 {
     text-align: center;
-    font-size: 12pt;
+    font-size: 24pt;
     margin-bottom: -20px;
 }
 
@@ -179,23 +179,37 @@ a {
 {
     color: #b61827;
 }
+.font_yellow
+{
+    color: orange;
+}
 .content_img
 {
     border-radius: 50%;
-    width: 350px;
-    height: 350px;
-    margin-left: -25px;
+    width: 200px;
+    height: 200px;
+
 }
 
 .container
 {
+    zoom: 0.75;
     margin-top: 15px;
     margin-left: 5px;
-    width: 300px;
+    width: 500px;
     height: 30%;
     background-color: #eceff1;
     border-radius: 50px;
     padding: 50px;
+    //height: 400px;
+    overflow: hidden;
+}
+
+.container:hover
+{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    //height: 30%;
 }
 
 .container_text
@@ -268,6 +282,7 @@ a {
     font-size: 14pt;
 }
 
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -288,7 +303,7 @@ a {
     position: absolute;
     top: -100px;
     width: 100%;
-    height: 100%;
+    height: 110%;
 }
 #header
 {
@@ -315,11 +330,13 @@ a {
     flex-flow: column wrap;
     /* This aligns items to the end line on main-axis */
     justify-content: flex-start;
-    margin-top: -20px;
+
     background-image: url("./img/img2.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
+    position: relative;
+    margin-top: -100px;
     border-bottom-left-radius: 300px;
     border-bottom-right-radius: 300px;
     padding: 100px;
@@ -348,12 +365,12 @@ a {
 #content{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     /*border-color: black;*/
     /*border-radius: 25px;*/
     /*border-style: groove;*/
     /*border-width: 10px;*/
-    margin: 35px;
+    margin: 1px;
     width: auto;
     padding: 50px;
     text-align: center;
@@ -374,7 +391,7 @@ a {
     z-index: -1;
     border-top-left-radius: 300px;
     border-top-right-radius: 300px;
-    padding: 50px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -421,7 +438,7 @@ a {
         opacity:0;
     }
     100% {
-        opacity:1;
+        opacity:            1;
     }
 }
 
@@ -436,8 +453,8 @@ a {
 #up_button {
     display: inline-block;
     background-color: #c50e29;
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     text-align: center;
     border-radius: 10px;
     position: fixed;
@@ -457,7 +474,7 @@ a {
     font-weight: normal;
     font-style: normal;
     font-size: 3em;
-    line-height: 100px;
+    line-height: 60px;
 
 
     color: #fff;
@@ -584,6 +601,7 @@ a {
     }
     .container
     {
+        zoom: 1;
         margin-top: 100px;
         margin-left: 10px;
         width: auto;
@@ -667,4 +685,12 @@ a {
     {
         text-shadow: 2px 2px 8px #000000;
     }
+    #up_button
+    {
+        width: 100px;
+        height: 100px;
+        bottom: 80px;
+        line-height: 100px;
+    }
+
 }
