@@ -299,7 +299,7 @@ a {
 
 #header {
     background-color: #b61827;
-    background-image: url("./img/header2.jpg");
+    background-image: url("./img/header.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -323,7 +323,7 @@ a {
     /* This aligns items to the end line on main-axis */
     justify-content: flex-start;
 
-    background-image: url("./img/img2.jpeg");
+    background-image: url("./img/img2.png");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
@@ -340,11 +340,7 @@ a {
     backdrop-filter: blur(20px);
 }
 
-#about_img {
-    width: auto;
-    height: 600px;
-    background-image: url("./img/about.jpg");
-}
+
 
 #advantages {
     display: flex;
@@ -372,7 +368,7 @@ a {
     display: flex;
     flex-flow: column wrap;
     /* This aligns items to the end line on main-axis */
-    background-image: url("./img/footer.jpg");
+    background-image: url("./img/footer.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
