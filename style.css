@@ -54,7 +54,7 @@ a {
 .regular_text
 {
     text-align: center;
-    font-size: 30pt;
+    font-size: 18pt;
 
 }
 .text_right
@@ -100,7 +100,7 @@ a {
 .title
 {
     text-align: center;
-    font-size: 18pt;
+    font-size: 24pt;
 
 }
 .small_text
@@ -134,8 +134,8 @@ a {
 
 .adv_content
 {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -151,11 +151,11 @@ a {
 }
 .adv_icon
 {
-    font-size: 48pt;
+    font-size: 28pt;
 }
 .adv_desc{
-    padding: 15px;
-    font-size: 16pt;
+    padding: 0px;
+    font-size: 12pt;
     text-align: center;
     align-content: baseline;
 }
@@ -181,7 +181,7 @@ a {
 
 .container
 {
-    margin-top: 100px;
+    margin-top: 15px;
     margin-left: 5px;
     width: 300px;
     height: 30%;
@@ -291,9 +291,9 @@ a {
     background-size: cover;
     width: 100%;
     height: auto;
-    padding-top: 0%;
+    padding-top: 5%;
     //background-position: center;
-    //margin-top: -100px;
+    margin-top: -100px;
     z-index: 1;
     backdrop-filter: saturate(10%);
     box-shadow: 0 19px 38px rgba(1,1,1,0.30), 0 15px 12px rgba(1,1,1,0.22);
@@ -340,7 +340,7 @@ a {
 #content{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     /*border-color: black;*/
     /*border-radius: 25px;*/
     /*border-style: groove;*/
@@ -361,12 +361,12 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: flex-start;
-    margin-top: -20px;
+
     background-color: #000a12;
     z-index: -1;
     border-top-left-radius: 300px;
     border-top-right-radius: 300px;
-    padding: 100px;
+    padding: 50px;
     text-align: center;
 }
 
@@ -583,5 +583,29 @@ a {
     .popup{
         width: 70%;
         
+    }
+    .font_cont_text
+    {
+        font-size: 18pt;
+    }
+    .title
+    {
+        font-size: 36pt;
+    }
+    .small_text
+    {
+        font-size: 18pt;
+    }
+    .button-text
+    {
+        font-size: 20pt;
+    }
+    .old_price_font
+    {
+        font-size: 14pt;
+    }
+    .stock_font
+    {
+        font-size: 18pt;
     }
 }
