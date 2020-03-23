@@ -177,7 +177,7 @@ a {
     border-radius: 50%;
     width: 350px;
     height: 350px;
-
+    margin-left: -25px;
 }
 
 .container
@@ -627,6 +627,10 @@ a {
     .adv_icon
     {
         font-size: 36pt;
+    }
+    .content_img
+    {
+        margin-left: auto;
     }
     #logo_text
     {
