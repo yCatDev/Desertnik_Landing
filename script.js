@@ -10,7 +10,11 @@ var popup, upbtn;
 window.onload = function () {
     popup = document.getElementById("popup1");
     upbtn = document.getElementById("up_button");
-
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+    }, 500);
 };
 
 window.addEventListener("scroll", function (event) {
