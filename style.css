@@ -2,46 +2,47 @@
 @import url('https://fonts.googleapis.com/css?family=Alice|Caveat|Fira+Sans+Extra+Condensed|M+PLUS+Rounded+1c|PT+Mono|Philosopher&display=swap');
 
 /*Global tags*/
-body{
+body {
     margin: 0;
     zoom: 1;
 
 }
 
 body > div {
-    transform: translate3d(0,0,0);
-    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
     -webkit-overflow-scrolling: touch;
 }
 
-hr{
+hr {
     border-width: 3px;
     border-style: solid;
     border-radius: 15px;
 }
+
 a {
     color: inherit; /* blue colors for links too */
     text-decoration: inherit; /* no underline */
 }
+
 /*Classes*/
-.button
-{
+.button {
     max-width: 50%;
     width: 500px;
     height: auto;
     backdrop-filter: blur(10px) contrast(50%);
     margin: 5px 0 5px -10px;
-    ..border-radius: 25px;
+. . border-radius: 25 px;
     border-style: solid;
     border-color: white;
     border-width: 5px 5px 5px 5px;
     background-color: transparent;
     border-bottom-right-radius: 25px;
     border-top-right-radius: 25px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
-.buy-button
-{
+
+.buy-button {
 
     background-color: #3d5afe;
     margin: -3px;
@@ -50,29 +51,29 @@ a {
     border-color: white;
     border-width: 3px 3px 3px 3px;
 
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
-.content_title
-{
+
+.content_title {
     color: white;
 
     font-size: 48pt;
 }
-.regular_text
-{
+
+.regular_text {
     text-align: center;
     font-size: 20pt;
 
 }
-.text_right
-{
+
+.text_right {
     text-align: right;
     padding-left: 60%;
 }
+
 .button:hover,
 .buy-button:hover,
-.order-button:hover
-{
+.order-button:hover {
     background-color: white;
     cursor: pointer;
 }
@@ -80,12 +81,11 @@ a {
 
 .button:hover .button-text,
 .buy-button:hover .button-text,
-.order-button:hover .button-text
-{
+.order-button:hover .button-text {
     color: black;
 }
-.button-text
-{
+
+.button-text {
     color: white;
     text-align: center;
     margin-top: 10px;
@@ -94,8 +94,8 @@ a {
     padding-right: 5px;
     font-size: 16pt;
 }
-.order-button
-{
+
+.order-button {
     background-color: #3d5afe;
     border-radius: 25px;
     border-style: solid;
@@ -104,21 +104,20 @@ a {
     margin: 25px;
 }
 
-.title
-{
+.title {
     text-align: center;
     font-size: 24pt;
 
 }
-.small_text
-{
+
+.small_text {
     text-align: right;
     font-family: 'Alice', serif;
     font-size: 18pt;
     padding-right: 25px;
 }
-.old_price_font
-{
+
+.old_price_font {
     text-align: right;
     font-family: 'Alice', serif;
     font-size: 12pt;
@@ -127,21 +126,21 @@ a {
     text-decoration: line-through;
     padding-top: -5px;
 }
-.border
-{
+
+.border {
     border-width: 10px;
     border-style: solid;
     border-color: black;
     margin: 50px;
 }
-.shadow-box{
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+.shadow-box {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     margin: 50px;
     padding-top: 10px;
 }
 
-.adv_content
-{
+.adv_content {
     margin-top: 15px;
     margin-bottom: 15px;
     display: flex;
@@ -149,50 +148,49 @@ a {
     align-items: center;
     max-width: 40%;
 }
-.adv_content:hover
-{
+
+.adv_content:hover {
     color: #3d5afe;
     cursor: pointer;
 }
-.adv_title{
+
+.adv_title {
     text-align: center;
 }
-.adv_icon
-{
+
+.adv_icon {
     font-size: 28pt;
 }
-.adv_desc{
+
+.adv_desc {
     padding: 0px;
     font-size: 12pt;
     text-align: center;
     align-content: baseline;
 }
 
-.stock_font
-{
+.stock_font {
     text-align: center;
     font-size: 24pt;
     margin-bottom: -20px;
 }
 
-.font_red
-{
+.font_red {
     color: #b61827;
 }
-.font_yellow
-{
+
+.font_yellow {
     color: orange;
 }
-.content_img
-{
+
+.content_img {
     border-radius: 50%;
     width: 200px;
     height: 200px;
 
 }
 
-.container
-{
+.container {
     zoom: 0.75;
     margin-top: 15px;
     margin-left: 5px;
@@ -201,19 +199,17 @@ a {
     background-color: #eceff1;
     border-radius: 50px;
     padding: 50px;
-    //height: 400px;
+/ / height: 400 px;
     overflow: hidden;
 }
 
-.container:hover
-{
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-    //height: 30%;
+.container:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+/ / height: 30 %;
 }
 
-.container_text
-{
+.container_text {
     margin-top: 70px;
     width: 600px;
     height: 40%;
@@ -222,63 +218,59 @@ a {
     padding: 50px;
 }
 
-.container_stock
-{
+.container_stock {
     background-color: #ff867f;
 }
 
-.social
-{
+.social {
     color: white;
     font-size: 48pt;
 }
 
-.blurred
-{
+.blurred {
     backdrop-filter: blur(10px) contrast(80%);
 }
-.font-number
-{
+
+.font-number {
     font-family: 'PT Mono', monospace;
     font-weight: lighter;
     text-decoration: underline;
     font-size: 56pt;
 }
-.rounded
-{
+
+.rounded {
     border-radius: 45px;
 }
-.font-white
-{
+
+.font-white {
     color: white;
 }
-.font-black
-{
+
+.font-black {
     color: black;
 }
-.font_caveat
-{
+
+.font_caveat {
     font-family: 'Caveat', cursive;
 }
 
-.font_philosopher
-{
+.font_philosopher {
     font-family: 'Philosopher', sans-serif;
 }
-.font_fira-sans
-{
+
+.font_fira-sans {
     font-family: 'Fira Sans Extra Condensed', sans-serif;
 }
-.font_mono
-{
+
+.font_mono {
     font-family: 'PT Mono', monospace;
 }
-.font_rounded
-{
+
+.font_rounded {
     font-family: 'M PLUS Rounded 1c', sans-serif;
 }
-.font_cont_text
-{
+
+.font_cont_text {
     font-size: 14pt;
 }
 
@@ -293,20 +285,19 @@ a {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 /*Ids*/
-#particles
-{
+#particles {
     position: absolute;
     top: -100px;
     width: 100%;
     height: 110%;
 }
-#header
-{
+
+#header {
     background-color: #b61827;
     background-image: url("./img/header2.jpg");
     background-position: center;
@@ -315,17 +306,18 @@ a {
     width: 100%;
     height: auto;
     padding-top: 5%;
-    //background-position: center;
+/ / background-position: center;
     margin-top: -100px;
     z-index: 1;
     backdrop-filter: saturate(10%);
-    box-shadow: 0 19px 38px rgba(1,1,1,0.30), 0 15px 12px rgba(1,1,1,0.22);
+    box-shadow: 0 19px 38px rgba(1, 1, 1, 0.30), 0 15px 12px rgba(1, 1, 1, 0.22);
 }
-#button_container
-{
+
+#button_container {
     left: 0;
 }
-#about{
+
+#about {
     display: flex;
     flex-flow: column wrap;
     /* This aligns items to the end line on main-axis */
@@ -341,28 +333,28 @@ a {
     border-bottom-right-radius: 300px;
     padding: 100px;
 }
-#about .container_text
-{
+
+#about .container_text {
     margin-right: 0;
     margin-left: auto;
     backdrop-filter: blur(20px);
 }
 
-#about_img
-{
+#about_img {
     width: auto;
     height: 600px;
     background-image: url("./img/about.jpg");
 }
-#advantages
-{
+
+#advantages {
     display: flex;
     flex-flow: row-reverse wrap;
     justify-content: space-around;
     margin-left: 250px;
     margin-right: 250px;
 }
-#content{
+
+#content {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -376,8 +368,7 @@ a {
     text-align: center;
 }
 
-#footer
-{
+#footer {
     display: flex;
     flex-flow: column wrap;
     /* This aligns items to the end line on main-axis */
@@ -395,24 +386,24 @@ a {
     text-align: center;
 }
 
-#motto
-{
-    //text-align: center;
+#motto {
+/ / text-align: center;
     font-size: 300%;
     margin-top: -5px;
     padding-left: 5px;
     color: white;
 }
-#logo_div
-{
+
+#logo_div {
     margin-top: 100px;
 
     margin-left: 10px;
 
 }
-#logo{
+
+#logo {
     max-width: 100px;
-    //padding-left: 25%;
+/ / padding-left: 25 %;
     padding-top: 10px;
     stroke-dasharray: 10000;
     stroke-dashoffset: 10000;
@@ -420,8 +411,9 @@ a {
     animation: dash 1.25s linear forwards;
 
 }
-#logo_text{
-    //text-align: center;
+
+#logo_text {
+/ / text-align: center;
     vertical-align: baseline;
     font-weight: bold;
     margin: 0 auto;
@@ -433,12 +425,12 @@ a {
 
 
 /*ANIMATIONS*/
-@keyframes fadeIn{
+@keyframes fadeIn {
     0% {
-        opacity:0;
+        opacity: 0;
     }
     100% {
-        opacity:            1;
+        opacity: 1;
     }
 }
 
@@ -479,21 +471,23 @@ a {
 
     color: #fff;
 }
+
 #up_button:hover {
     cursor: pointer;
     background-color: #333;
 }
+
 #up_button:active {
     background-color: #555;
 }
+
 #up_button.show {
     opacity: 1;
     visibility: visible;
 }
 
 /* Modal Content/Box */
-#popup1
-{
+#popup1 {
     display: none;
 }
 
@@ -508,6 +502,7 @@ a {
 
     opacity: 1;
 }
+
 .overlay:target {
 
     opacity: 1;
@@ -525,7 +520,7 @@ a {
     position: relative;
     transition: all 5s ease-in-out;
     text-align: center;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .popup h2 {
@@ -534,6 +529,7 @@ a {
     font-family: Tahoma, Arial, sans-serif;
     text-align: center;
 }
+
 .popup .close {
     position: absolute;
     top: 20px;
@@ -544,10 +540,12 @@ a {
     text-decoration: none;
     color: #333;
 }
+
 .popup .close:hover {
     color: #06D85F;
     cursor: pointer;
 }
+
 .popup .content {
 
     overflow: auto;
@@ -556,8 +554,8 @@ a {
     /* This aligns items to the end line on main-axis */
     justify-content: center;
 }
-.popup input
-{
+
+.popup input {
     min-height: 25px;
     margin: 10px;
     border-style: solid;
@@ -565,8 +563,8 @@ a {
     padding: 10px;
     background-color: #cfd8dc;
 }
-.popup textarea
-{
+
+.popup textarea {
     min-height: 75px;
     margin: 10px;
     border-style: solid;
@@ -576,117 +574,119 @@ a {
     resize: none;
 }
 
-@media screen and (max-width: 700px){
-    .box{
+@media screen and (max-width: 700px) {
+    .box {
         width: 70%;
     }
-    .popup{
+
+    .popup {
         width: 70%;
     }
 }
 
-@media screen and (max-width: 1350px){
-    #about .container_text
-    {
+@media screen and (max-width: 1350px) {
+    #about .container_text {
         margin-right: auto;
         margin-left: auto;
         backdrop-filter: blur(20px);
         width: 800px;
         padding: 1px;
     }
-    #advantages
-    {
+
+    #advantages {
         margin-left: auto;
         margin-right: auto;
     }
-    .container
-    {
+
+    .container {
         zoom: 1;
         margin-top: 100px;
         margin-left: 10px;
         width: auto;
     }
-    .box{
+
+    .box {
         width: 70%;
     }
-    .popup{
+
+    .popup {
         width: 70%;
-        
+
     }
-    .font_cont_text
-    {
+
+    .font_cont_text {
         font-size: 24pt;
     }
-    .title
-    {
+
+    .title {
         font-size: 48pt;
     }
-    .small_text
-    {
+
+    .small_text {
         font-size: 26pt;
     }
-    .button-text
-    {
+
+    .button-text {
         font-size: 32pt;
     }
-    .old_price_font
-    {
+
+    .old_price_font {
         font-size: 24pt;
     }
-    .stock_font
-    {
+
+    .stock_font {
         font-size: 28pt;
     }
-    .regular_text
-    {
+
+    .regular_text {
         font-size: 36pt;
     }
-    .adv_desc
-    {
+
+    .adv_desc {
         font-size: 18pt;
     }
-    .adv_title
-    {
+
+    .adv_title {
         font-size: 24pt;
     }
-    .adv_icon
-    {
+
+    .adv_icon {
         font-size: 36pt;
     }
-    .content_img
-    {
+
+    .content_img {
         margin-left: auto;
     }
-    .popup
-    {
+
+    .popup {
         top: 40%;
     }
-    .popup h2
-    {
+
+    .popup h2 {
         font-size: 36pt;
     }
-    .popup .content
-    {
+
+    .popup .content {
         font-size: 24pt;
     }
-    .popup input
-    {
+
+    .popup input {
         font-size: 18pt;
     }
-    .popup textarea
-    {
+
+    .popup textarea {
         font-size: 18pt;
     }
-    #logo_text
-    {
+
+    #logo_text {
         text-shadow: 2px 2px 8px #000000;
     }
-    #motto
-    {
+
+    #motto {
         text-shadow: 2px 2px 8px #000000;
     }
-    #up_button
-    {
+
+    #up_button {
         width: 100px;
         height: 100px;
         bottom: 80px;
