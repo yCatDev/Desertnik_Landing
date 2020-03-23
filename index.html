@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/726e03ea95.js" crossorigin="anonymous"></script>
+    <script src="particles.min.js">
+    </script>
+    <script src="script.js">
+    </script>
+    <title>Смачні торти по всій Україні</title>
+</head>
+<body>
+<div id="header">
+    <div id="particles"></div>
+    <div id="logo_div" class="rounded">
+
+        <span id="logo_text" class="font_caveat"> <svg version="1.2" baseProfile="tiny" id="logo"
+                                                       xmlns="http://www.w3.org/2000/svg"
+                                                       xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                       viewBox="0 0 300 320"
+                                                       xml:space="preserve">
+
+<g transform="translate(0.000000,1161.000000) scale(0.100000,-0.100000)">
+	<path fill="#FFFFFF" stroke="#FFFFFF" stroke-width="200" stroke-miterlimit="10" d="M1466.2,11212.9c-66.2-13.4-68.5-16.2-40.3-39.4
+		c45.6-38.7,56.3-86.5,30.4-139.2c-31.2-63.3-86.7-106.2-214.5-166.6c-140.7-66.8-194-130.8-201.6-242.5
+		c-5.3-63.3,6.1-56.2-103.4-68.9c-222.1-26.7-344.6-123-330.1-260.1c2.3-21.8,6.1-45,9.1-51.3c6.1-14.8-9.1-21.8-79.1-33.7
+		c-94.3-15.5-152.1-55.5-186.4-128.7c-24.3-50.6-24.3-59.8-0.8-103.3c22.8-42.2,71.5-77.3,136.9-99.1c31.9-10.6,53.5-22.7,54.8-23.2
+		c57.4-21.2,123-161.8,177.2-626.4c57-206.9,114.1-413.8,171.1-620.8c110.3-12.7,220.6-25.3,330.9-38c240.9,0,481.7,0,722.6,0
+		c62.9,8,125.8,15.9,188.6,23.9c36.3,9.8,72.5,19.7,108.8,29.5c185.3,689.3,317.3,1181.6,322.5,1205c0.4,1.6,1.4,8.4,6.4,15.6
+		c6.3,9.1,18,16.2,43.1,28c82.1,38,132.3,112.5,132.3,196.8c0.8,87.2-78.3,170.1-203.8,214.4c-19,7-35,16.2-35,21.8
+		c0,4.9,11.4,14.8,25.1,23.2c110.3,63.3,127.8,172.9,38,247.5c-53.2,44.3-145.3,66.8-329.3,80.1c-89,7-133.1,23.9-190.9,73.1
+		c-57,48.5-108,122.3-151.4,222.2c-41.8,94.9-70.7,139.2-117.9,182.8C1697.4,11211.5,1590.2,11237.5,1466.2,11212.9z"/>
+</g>
+</svg>Десертник</span>
+    </div>
+    <p id="motto" class="font_caveat">Смачні та свіжі торти по всій Україні!</p>
+    <div id="button_container">
+        <div class="button ">
+            <p class="font_rounded button-text" onclick="EPPZScrollTo.scrollVerticalToElementById('about', 20);">Про
+                нас</p>
+        </div>
+        <div class="button ">
+            <p class="font_rounded button-text" onclick="EPPZScrollTo.scrollVerticalToElementById('products', 20);">Наші
+                вироби</p>
+        </div>
+        <div class="button ">
+            <p class="font_rounded button-text" onclick="EPPZScrollTo.scrollVerticalToElementById('footer', 20);">
+                Контакти</p>
+        </div>
+        <div class="button">
+            <p class="font_rounded button-text" onclick="ShowPopup();">Замовити зараз</p>
+        </div>
+    </div>
+
+    <br><br><br>
+</div>
+<script>particlesJS.load('particles', 'particles.json');</script>
+<br>
+<div id="about">
+    <div class="container_text">
+        <p class="font_rounded title font-white"> Про нас</p>
+        <p class="regular_text font_caveat font-white">Ми, кондитерський магазин, працюємо з 1995 року та втілюємо ваші
+            мрії в життя. З 2008-го почали переходити в онлайн режим та налаштовувати поставки по всій Україні.
+            Наша идеологія це доставка свіжих тортів щойно с печі вам на свято.
+        </p></div>
+    <br><br><br>
+</div>
+<p class="title font_rounded">Чому саме ми?</p>
+<div id="advantages">
+
+    <div class="adv_content ">
+        <div class="adv_icon adv_content-centred"><i class="fas fa-truck"></i></div>
+        <div class="adv_title font_rounded adv_content-centred"><h1>Швидка доставка</h1></div>
+        <div class="adv_desc font_rounded adv_content-centred">Ми розпочинаємо доставку відразу після приготування на
+            обранну вами дату
+        </div>
+    </div>
+    <div class="adv_content ">
+        <div class="adv_icon adv_content-centred"><i class="fas fa-award"></i></div>
+        <div class="adv_title font_rounded adv_content-centred"><h1>Досвідченні кухарі</h1></div>
+        <div class="adv_desc font_rounded adv_content-centred"><p>Наші кухари це досвідченні професіонали які мають
+            нагороди як від українських так и від європейських експертів</p>
+        </div>
+    </div>
+    <div class="adv_content ">
+        <div class="adv_icon adv_content-centred"><i class="fas fa-magic"></i></div>
+        <div class="adv_title font_rounded adv_content-centred"><h1>Оригинальне формлення</h1></div>
+        <div class="adv_desc font_rounded adv_content-centred">Якщо ви бажаєте ви можете створити своє або обрати
+            дизайнирске оформлення с урахуванням ваших побажань для торту
+        </div>
+    </div>
+    <div class="adv_content ">
+        <div class="adv_icon adv_content-centred"><i class="fas fa-birthday-cake"></i></div>
+        <div class="adv_title font_rounded adv_content-centred"><h1>Смачні торти</h1></div>
+        <div class="adv_desc font_rounded adv_content-centred">Ми маємо безліч смачних рецептів на будь-який випадок в
+            житті, від простого бажання до весілля
+        </div>
+    </div>
+    <div class="adv_content ">
+        <div class="adv_icon adv_content-centred"><i class="fas fa-users"></i><i class="fas fa-thumbs-up"></i></div>
+        <div class="adv_title font_rounded adv_content-centred"><h1>Велика кількість клієнтів</h1></div>
+        <div class="adv_desc font_rounded adv_content-centred">За весь час нашого існування ми зібрали велику
+            кількість постійних клієнтів які с задоволенням користуються нашими послугами
+        </div>
+    </div>
+    <div class="adv_content ">
+        <div class="adv_icon adv_content-centred"><i class="fas fa-bolt"></i></div>
+        <div class="adv_title font_rounded adv_content-centred"><h1>Послуга швидкого приготування</h1></div>
+        <div class="adv_desc font_rounded adv_content-centred">Якщо у вас сталося незапланованная подія і вам терміново
+            потрібен торт, ви можете замовити опцію швидкого приготування та отримати торт вже за кілька годин
+        </div>
+    </div>
+</div>
+<p id="products" class="title font_rounded">Наші вироби</p>
+<div id="content">
+    <div class="container container_stock">
+        <img class="content_img" src="img/t1.jpg">
+        <br>
+        <p class="stock_font font_mono font_red">АКЦІЯ</p>
+        <p class="title font_philosopher">Тістечко заварне</p>
+        <p class="font_rounded">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris leo enim, gravida sed
+            mauris ac, dapibus tristique neque. Quisque ac tempor odio, sed ornare nulla. Donec vel ultrices ex. Donec
+            et nibh nunc. In vitae pretium velit, in fermentum lectus. Pellentesque et orci quam. Maecenas nec odio
+            nulla. Nullam aliquet aliquet augue sit amet euismod.</p>
+        <br>
+        <hr>
+        <p class="small_text">Доступна послуга швидкого приготування <i class="fas fa-bolt"></i></p>
+        <p class="small_text">Вага: 1 кг <i class="fas fa-weight-hanging"></i></p>
+        <p class="small_text">Час приготування: 1.5 годин <i class="fas fa-clock"></i></p>
+        <p class="small_text font_red">Ціна: 59 <i class="fas fa-money-bill-wave-alt"></i></p>
+        <p class="old_price_font">Ціна: 100 <i class="fas fa-money-bill-wave-alt"></i></p>
+        <br>
+        <div class="buy-button">
+            <p class="font_rounded button-text font-white" onclick="ShowPopup();">Замовити зараз</p>
+        </div>
+    </div>
+    <div class="container">
+        <img class="content_img" src="img/t1.jpg">
+        <br>
+        <p class="title font_philosopher">Наполеон</p>
+        <p class="font_rounded">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris leo enim, gravida sed
+            mauris ac, dapibus tristique neque. Quisque ac tempor odio, sed ornare nulla. Donec vel ultrices ex. Donec
+            et nibh nunc. In vitae pretium velit, in fermentum lectus. Pellentesque et orci quam. Maecenas nec odio
+            nulla. Nullam aliquet aliquet augue sit amet euismod.</p>
+        <br>
+        <hr>
+        <p class="small_text">Вага: 1 кг <i class="fas fa-weight-hanging"></i></p>
+        <p class="small_text">Час приготування: 1.5 годин <i class="fas fa-clock"></i></p>
+        <p class="small_text">Ціна: 100 <i class="fas fa-money-bill-wave-alt"></i></p>
+        <br>
+        <div class="buy-button">
+            <p class="font_rounded button-text font-white" onclick="ShowPopup();">Замовити зараз</p>
+        </div>
+    </div>
+    <div class="container">
+        <img class="content_img" src="img/t1.jpg">
+        <br>
+        <p class="title font_philosopher">Наполеон</p>
+        <p class="font_rounded">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris leo enim, gravida sed
+            mauris ac, dapibus tristique neque. Quisque ac tempor odio, sed ornare nulla. Donec vel ultrices ex. Donec
+            et nibh nunc. In vitae pretium velit, in fermentum lectus. Pellentesque et orci quam. Maecenas nec odio
+            nulla. Nullam aliquet aliquet augue sit amet euismod.</p>
+        <br>
+        <hr>
+        <p class="small_text">Вага: 1 кг <i class="fas fa-weight-hanging"></i></p>
+        <p class="small_text">Час приготування: 1.5 годин <i class="fas fa-clock"></i></p>
+        <p class="small_text">Ціна: 100 <i class="fas fa-money-bill-wave-alt"></i></p>
+        <br>
+        <div class="buy-button">
+            <p class="font_rounded button-text font-white" onclick="ShowPopup();">Замовити зараз</p>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <p class=" title font_rounded font-white">Залишились питання? <br> Зателефонуйте нам!</p>
+    <p class="font_rounded font-white font-number">+380 67 103 47 89</p>
+    <p class="title font_rounded font-white">Або задайте нам питання в соц. сітях</p>
+    <div class="social"><i class="fab fa-telegram"></i> <i class="fab fa-facebook-square"></i> <i
+            class="fab fa-instagram-square"></i></div>
+</div>
+
+<div id="popup1" class="overlay">
+    <div class="popup">
+        <h2>Замовляйте зараз</h2>
+        <div class="close" onclick="HidePopup();">&times;</div>
+        <div class="content font_rounded">
+            Обрали десерт? Залиште свої контактні данні та ми перезвонемо вам протягом 5 хвилин.
+            <input class="font_rounded" type="text" size="40" placeholder="Ваше им'я">
+            <input class="font_rounded" type="text" size="40" placeholder="Ваш телефон">
+            <textarea class="font_rounded" type="text" size="40" placeholder="Комментар"></textarea>
+            <div class="order-button">
+                <p class="font_rounded button-text font-white"><a href="/">Замовити</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<a id="up_button" class="" onclick="EPPZScrollTo.scrollVerticalToElementById('header', 10);"></a>
+</body>
+</html>

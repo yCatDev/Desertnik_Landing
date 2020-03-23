@@ -1,0 +1,583 @@
+/*Imports*/
+@import url('https://fonts.googleapis.com/css?family=Alice|Caveat|Fira+Sans+Extra+Condensed|M+PLUS+Rounded+1c|PT+Mono|Philosopher&display=swap');
+
+/*Global tags*/
+body{
+    margin: 0;
+}
+
+hr{
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 15px;
+}
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+/*Classes*/
+.button
+{
+    max-width: 50%;
+    width: 500px;
+    height: auto;
+    backdrop-filter: blur(10px) contrast(50%);
+    margin: 5px 0 5px -10px;
+    ..border-radius: 25px;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px 5px 5px 5px;
+    background-color: transparent;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.buy-button
+{
+
+    background-color: #3d5afe;
+    margin: -3px;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px 5px 5px 5px;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.content_title
+{
+    color: white;
+
+    font-size: 48pt;
+}
+.regular_text
+{
+    text-align: center;
+    font-size: 30pt;
+
+}
+.text_right
+{
+    text-align: right;
+    padding-left: 60%;
+}
+.button:hover,
+.buy-button:hover,
+.order-button:hover
+{
+    background-color: white;
+    cursor: pointer;
+}
+
+
+.button:hover .button-text,
+.buy-button:hover .button-text,
+.order-button:hover .button-text
+{
+    color: black;
+}
+.button-text
+{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 24pt;
+}
+.order-button
+{
+    background-color: #3d5afe;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px 5px 5px 5px;
+    margin: 25px;
+}
+
+.title
+{
+    text-align: center;
+    font-size: 36pt;
+
+}
+.small_text
+{
+    text-align: right;
+    font-family: 'Alice', serif;
+    font-size: 16pt;
+    padding-right: 25px;
+}
+.old_price_font
+{
+    text-align: right;
+    font-family: 'Alice', serif;
+    font-size: 12pt;
+    padding-right: 25px;
+    text-decoration: line-through;
+    padding-top: -5px;
+}
+.border
+{
+    border-width: 10px;
+    border-style: solid;
+    border-color: black;
+    margin: 50px;
+}
+.shadow-box{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin: 50px;
+    padding-top: 10px;
+}
+
+.adv_content
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    max-width: 40%;
+}
+.adv_content:hover
+{
+    color: #3d5afe;
+    cursor: pointer;
+}
+.adv_title{
+    text-align: center;
+}
+.adv_icon
+{
+    font-size: 48pt;
+}
+.adv_desc{
+    padding: 15px;
+    font-size: 16pt;
+    text-align: center;
+    align-content: baseline;
+}
+
+.stock_font
+{
+    text-align: center;
+    font-size: 18pt;
+    margin-bottom: -50px;
+}
+
+.font_red
+{
+    color: #b61827;
+}
+.content_img
+{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+
+}
+
+.container
+{
+    margin-top: 100px;
+    margin-left: 5px;
+    width: 400px;
+
+    height: 30%;
+    background-color: #eceff1;
+    border-radius: 50px;
+    padding: 50px;
+}
+
+.container_text
+{
+    margin-top: 100px;
+    width: 600px;
+    height: 40%;
+    backdrop-filter: blur(10px) contrast(100%);
+    border-radius: 50px;
+    padding: 50px;
+}
+
+.container_stock
+{
+    background-color: #ff867f;
+}
+
+.social
+{
+    color: white;
+    font-size: 48pt;
+}
+
+.blurred
+{
+    backdrop-filter: blur(10px) contrast(80%);
+}
+.font-number
+{
+    font-family: 'PT Mono', monospace;
+    font-weight: lighter;
+    text-decoration: underline;
+    font-size: 56pt;
+}
+.rounded
+{
+    border-radius: 45px;
+}
+.font-white
+{
+    color: white;
+}
+.font-black
+{
+    color: black;
+}
+.font_caveat
+{
+    font-family: 'Caveat', cursive;
+}
+
+.font_philosopher
+{
+    font-family: 'Philosopher', sans-serif;
+}
+.font_fira-sans
+{
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+.font_mono
+{
+    font-family: 'PT Mono', monospace;
+}
+.font_rounded
+{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/*Ids*/
+#particles
+{
+    position: absolute;
+    top: -100px;
+    width: 100%;
+    height: 100%;
+}
+#header
+{
+    background-color: #b61827;
+    background-image: url("/img/header2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding-top: 10%;
+    //background-position: center;
+    //margin-top: -100px;
+    z-index: 1;
+    backdrop-filter: saturate(10%);
+    box-shadow: 0 19px 38px rgba(1,1,1,0.30), 0 15px 12px rgba(1,1,1,0.22);
+}
+#button_container
+{
+    left: 0;
+}
+#about{
+    display: flex;
+    flex-flow: column wrap;
+    /* This aligns items to the end line on main-axis */
+    justify-content: flex-start;
+    margin-top: -20px;
+    background-image: url("/img/img2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    border-bottom-left-radius: 300px;
+    border-bottom-right-radius: 300px;
+    padding: 100px;
+}
+#about .container_text
+{
+    margin-right: 0;
+    margin-left: auto;
+    backdrop-filter: blur(20px);
+}
+
+#about_img
+{
+    width: auto;
+    height: 600px;
+    background-image: url("/img/about.jpg");
+}
+#advantages
+{
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-around;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+#content{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    /*border-color: black;*/
+    /*border-radius: 25px;*/
+    /*border-style: groove;*/
+    /*border-width: 10px;*/
+    margin: 35px;
+    width: auto;
+    padding: 50px;
+    text-align: center;
+}
+
+#footer
+{
+    display: flex;
+    flex-flow: column wrap;
+    /* This aligns items to the end line on main-axis */
+    background-image: url("/img/footer.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: flex-start;
+    margin-top: -20px;
+    background-color: #000a12;
+    z-index: -1;
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
+    padding: 100px;
+    text-align: center;
+}
+
+#motto
+{
+    //text-align: center;
+    font-size: 300%;
+    margin-top: -5px;
+    padding-left: 5px;
+    color: white;
+}
+#logo_div
+{
+    margin-top: 100px;
+
+    margin-left: 10px;
+
+}
+#logo{
+    max-width: 100px;
+    //padding-left: 25%;
+    padding-top: 10px;
+    stroke-dasharray: 10000;
+    stroke-dashoffset: 10000;
+    fill-opacity: 0.5;
+    animation: dash 1.25s linear forwards;
+
+}
+#logo_text{
+    //text-align: center;
+    vertical-align: baseline;
+    font-weight: bold;
+    margin: 0 auto;
+    font-size: 700%;
+    color: white;
+    animation: fadeIn ease 2s;
+}
+
+
+/*ANIMATIONS*/
+@keyframes fadeIn{
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+        fill-opacity: 1;
+    }
+}
+
+/* Up button */
+#up_button {
+    display: inline-block;
+    background-color: #c50e29;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+    opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    text-align: center;
+}
+
+#up_button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 3em;
+    line-height: 100px;
+
+
+    color: #fff;
+}
+#up_button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+#up_button:active {
+    background-color: #555;
+}
+#up_button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Modal Content/Box */
+#popup1
+{
+    display: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(10px) contrast(60%);
+    transition: opacity 500ms;
+
+    opacity: 1;
+}
+.overlay:target {
+
+    opacity: 1;
+}
+
+.popup {
+    top: 30%;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 45%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+    text-align: center;
+}
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.popup .close:hover {
+    color: #06D85F;
+    cursor: pointer;
+}
+.popup .content {
+
+    overflow: auto;
+    display: flex;
+    flex-flow: column wrap;
+    /* This aligns items to the end line on main-axis */
+    justify-content: center;
+}
+.popup input
+{
+    min-height: 25px;
+    margin: 10px;
+    border-style: solid;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: #cfd8dc;
+}
+.popup textarea
+{
+    min-height: 75px;
+    margin: 10px;
+    border-style: solid;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: #cfd8dc;
+    resize: none;
+}
+
+@media screen and (max-width: 700px){
+    .box{
+        width: 70%;
+    }
+    .popup{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1350px){
+    #about .container_text
+    {
+        margin-right: auto;
+        margin-left: auto;
+        backdrop-filter: blur(20px);
+    }
+    #advantages
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container
+    {
+        margin-top: 100px;
+        margin-left: 10px;
+        width: auto;
+    }
+    .box{
+        width: 70%;
+    }
+    .popup{
+        width: 70%;
+        
+    }
+}
