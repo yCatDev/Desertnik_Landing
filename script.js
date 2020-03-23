@@ -1,4 +1,6 @@
 
+if (typeof window.orientation !== 'undefined')
+    particlesJS.load('particles', 'particles.json');
 
 var popup, upbtn;
 window.onload = function () {
