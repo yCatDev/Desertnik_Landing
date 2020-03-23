@@ -497,7 +497,7 @@ a {
 }
 
 .popup {
-    top: 30%;
+    top: 10%;
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -522,7 +522,7 @@ a {
     top: 20px;
     right: 30px;
     transition: all 200ms;
-    font-size: 30px;
+    font-size: 36pt;
     font-weight: bold;
     text-decoration: none;
     color: #333;
@@ -638,6 +638,26 @@ a {
     .content_img
     {
         margin-left: auto;
+    }
+    .popup
+    {
+        top: 40%;
+    }
+    .popup h2
+    {
+        font-size: 36pt;
+    }
+    .popup .content
+    {
+        font-size: 24pt;
+    }
+    .popup input
+    {
+        font-size: 18pt;
+    }
+    .popup textarea
+    {
+        font-size: 18pt;
     }
     #logo_text
     {
