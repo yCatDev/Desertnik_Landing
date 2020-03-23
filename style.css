@@ -115,6 +115,7 @@ a {
     text-align: right;
     font-family: 'Alice', serif;
     font-size: 12pt;
+    color: dimgray;
     padding-right: 25px;
     text-decoration: line-through;
     padding-top: -5px;
@@ -174,8 +175,8 @@ a {
 .content_img
 {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 350px;
+    height: 350px;
 
 }
 
@@ -192,7 +193,7 @@ a {
 
 .container_text
 {
-    margin-top: 100px;
+    margin-top: 70px;
     width: 600px;
     height: 40%;
     backdrop-filter: blur(10px) contrast(100%);
@@ -403,6 +404,7 @@ a {
     font-size: 700%;
     color: white;
     animation: fadeIn ease 2s;
+
 }
 
 
@@ -565,6 +567,8 @@ a {
         margin-right: auto;
         margin-left: auto;
         backdrop-filter: blur(20px);
+        width: 800px;
+        padding: 1px;
     }
     #advantages
     {
@@ -586,26 +590,50 @@ a {
     }
     .font_cont_text
     {
-        font-size: 18pt;
+        font-size: 24pt;
     }
     .title
     {
-        font-size: 36pt;
+        font-size: 48pt;
     }
     .small_text
     {
-        font-size: 18pt;
+        font-size: 26pt;
     }
     .button-text
     {
-        font-size: 20pt;
+        font-size: 32pt;
     }
     .old_price_font
     {
-        font-size: 14pt;
+        font-size: 24pt;
     }
     .stock_font
     {
+        font-size: 28pt;
+    }
+    .regular_text
+    {
+        font-size: 36pt;
+    }
+    .adv_desc
+    {
         font-size: 18pt;
+    }
+    .adv_title
+    {
+        font-size: 24pt;
+    }
+    .adv_icon
+    {
+        font-size: 36pt;
+    }
+    #logo_text
+    {
+        text-shadow: 2px 2px 8px #000000;
+    }
+    #motto
+    {
+        text-shadow: 2px 2px 8px #000000;
     }
 }
