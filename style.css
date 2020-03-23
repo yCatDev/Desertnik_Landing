@@ -671,7 +671,8 @@ a {
         zoom: 1;
         margin-top: 100px;
         margin-left: 10px;
-        width: auto;
+        width: 100%;
+        max-width: 100%;
     }
 
     .box {
