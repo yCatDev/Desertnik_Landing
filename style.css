@@ -49,6 +49,28 @@ a {
     text-decoration: inherit; /* no underline */
 }
 
+nav{
+    left: 0;
+}
+
+footer {
+    display: flex;
+    flex-flow: column wrap;
+    /* This aligns items to the end line on main-axis */
+    background-image: url("./img/footer.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: flex-start;
+
+    background-color: #000a12;
+    z-index: -1;
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
+    padding: 10px;
+    text-align: center;
+}
+
 /*Classes*/
 .button {
     max-width: 50%;
@@ -337,9 +359,6 @@ a {
     box-shadow: 0 19px 38px rgba(1, 1, 1, 0.30), 0 15px 12px rgba(1, 1, 1, 0.22);
 }
 
-#button_container {
-    left: 0;
-}
 
 #about {
     display: flex;
@@ -388,23 +407,7 @@ a {
     text-align: center;
 }
 
-#footer {
-    display: flex;
-    flex-flow: column wrap;
-    /* This aligns items to the end line on main-axis */
-    background-image: url("./img/footer.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    justify-content: flex-start;
 
-    background-color: #000a12;
-    z-index: -1;
-    border-top-left-radius: 300px;
-    border-top-right-radius: 300px;
-    padding: 10px;
-    text-align: center;
-}
 
 #motto {
 / / text-align: center;

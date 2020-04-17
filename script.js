@@ -1,36 +1,5 @@
-
-
 if (navigator.userAgent.match('Mobile') == null) {
     particlesJS.load('particles', 'particles.json');
-}
-
-
-
-var popup, upbtn;
-window.onload = function () {
-    popup = document.getElementById("popup1");
-    upbtn = document.getElementById("up_button");
-    document.body.classList.add('loaded_hiding');
-    window.setTimeout(function () {
-        document.body.classList.add('loaded');
-        document.body.classList.remove('loaded_hiding');
-    }, 500);
-};
-
-window.addEventListener("scroll", function (event) {
-    var scroll = this.scrollY;
-    if (scroll > 500)
-        upbtn.className = "show";
-    else
-        upbtn.className = "";
-});
-
-function ShowPopup() {
-    popup.style.display = 'block';
-}
-
-function HidePopup() {
-    popup.style.display = 'none';
 }
 
 /**
@@ -43,7 +12,7 @@ function HidePopup() {
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  *
  */
-var EPPZScrollTo =
+let EPPZScrollTo =
     {
         /**
          * Helpers.
@@ -68,8 +37,8 @@ var EPPZScrollTo =
         },
 
         elementVerticalClientPositionById: function (id) {
-            var element = document.getElementById(id);
-            var rectangle = element.getBoundingClientRect();
+            let element = document.getElementById(id);
+            let rectangle = element.getBoundingClientRect();
             return rectangle.top;
         },
 
@@ -77,12 +46,12 @@ var EPPZScrollTo =
          * Animation tick.
          */
         scrollVerticalTickToPosition: function (currentPosition, targetPosition) {
-            var filter = 0.2;
-            var fps = 60;
-            var difference = parseFloat(targetPosition) - parseFloat(currentPosition);
+            let filter = 0.2;
+            let fps = 60;
+            let difference = parseFloat(targetPosition) - parseFloat(currentPosition);
 
             // Snap, then stop if arrived.
-            var arrived = (Math.abs(difference) <= 0.5);
+            let arrived = (Math.abs(difference) <= 0.5);
             if (arrived) {
                 // Apply target.
                 scrollTo(0.0, targetPosition);
@@ -106,20 +75,100 @@ var EPPZScrollTo =
          * @param padding Top padding to apply above element.
          */
         scrollVerticalToElementById: function (id, padding) {
-            var element = document.getElementById(id);
+            let element = document.getElementById(id);
             if (element == null) {
                 console.warn('Cannot find element with id \'' + id + '\'.');
                 return;
             }
 
-            var targetPosition = this.documentVerticalScrollPosition() + this.elementVerticalClientPositionById(id) - padding;
-            var currentPosition = this.documentVerticalScrollPosition();
+            let targetPosition = this.documentVerticalScrollPosition() + this.elementVerticalClientPositionById(id) - padding;
+            let currentPosition = this.documentVerticalScrollPosition();
 
             // Clamp.
-            var maximumScrollPosition = this.documentMaximumScrollPosition();
+            let maximumScrollPosition = this.documentMaximumScrollPosition();
+            if (targetPosition > maximumScrollPosition) targetPosition = maximumScrollPosition;
+
+            // Start animation.
+            this.scrollVerticalTickToPosition(currentPosition, targetPosition);
+        },
+
+        /**
+         * For public use.
+         *
+         * @param name The name of the first element to scroll to.
+         * @param padding Top padding to apply above element.
+         */
+        scrollVerticalToElementByName: function (name, padding) {
+            let element = document.getElementsByName(name);
+            if (element == null) {
+                console.warn('Cannot find element with name \'' + name + '\'.');
+                return;
+            }
+
+            let targetPosition = this.documentVerticalScrollPosition() + this.elementVerticalClientPositionById(id) - padding;
+            let currentPosition = this.documentVerticalScrollPosition();
+
+            // Clamp.
+            let maximumScrollPosition = this.documentMaximumScrollPosition();
             if (targetPosition > maximumScrollPosition) targetPosition = maximumScrollPosition;
 
             // Start animation.
             this.scrollVerticalTickToPosition(currentPosition, targetPosition);
         }
+
     };
+
+
+
+window.onload = initPage;
+
+
+
+
+
+window.setTimeout(function () {
+    document.body.classList.add('loaded');
+    document.body.classList.remove('loaded_hiding');
+}, 500);
+
+
+
+function initPage() {
+    let popup = document.getElementById("popup1");
+    let popupBtn = document.getElementById("showPopupBtn");
+    let buyBtns = document.getElementsByClassName("buy-button");
+    let popupCloseBtn = document.getElementById("popupCloseBtn");
+    let aboutBtn = document.getElementById("aboutBtn");
+    let productBtn = document.getElementById("productBtn");
+    let footerBtn = document.getElementById("footerBtn");
+    let upbtn = document.getElementById("up_button");
+
+    aboutBtn.onclick = function () {EPPZScrollTo.scrollVerticalToElementById('about', 1);};
+    productBtn.onclick = function () {EPPZScrollTo.scrollVerticalToElementById('products', 1);};
+    footerBtn.onclick = function () {EPPZScrollTo.scrollVerticalToElementById('footer', 1);};
+    upbtn.onclick = function () {EPPZScrollTo.scrollVerticalToElementById('header', 10);};
+
+    popupBtn.onclick = ShowPopup;
+    for(let i = 0; i<buyBtns.length; i++)
+        buyBtns[i].addEventListener("click", ShowPopup);
+    popupCloseBtn.onclick = HidePopup;
+
+    document.body.classList.add('loaded_hiding');
+
+    function ShowPopup() {
+        popup.style.display = 'block';
+    }
+
+    function HidePopup() {
+        popup.style.display = 'none';
+    }
+
+    window.addEventListener("scroll", function (event) {
+        let scroll = this.scrollY;
+        if (scroll > 500)
+            upbtn.className = "show";
+        else
+            upbtn.className = "";
+    });
+
+}
