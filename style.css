@@ -62,8 +62,7 @@ footer {
     background-repeat: no-repeat;
     background-size: auto;
     justify-content: flex-start;
-
-    background-color: #000a12;
+    background-color: black;
     z-index: -1;
     border-top-left-radius: 300px;
     border-top-right-radius: 300px;
@@ -424,7 +423,7 @@ footer {
 
 #motto {
 / / text-align: center;
-    font-size: 300%;
+    font-size: 36pt;
     margin-top: -5px;
     padding-left: 5px;
     color: white;
@@ -453,7 +452,7 @@ footer {
     vertical-align: baseline;
     font-weight: bold;
     margin: 0 auto;
-    font-size: 700%;
+    font-size: 82pt;
     color: white;
     animation: fadeIn ease 2s;
 
