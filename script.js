@@ -177,7 +177,7 @@ function initPage() {
     function OpenMap(){
         // If it's an iPhone..
         if(navigator.userAgent.match('Mobile') != null)
-            window.open("maps://www.google.com/maps/dir/?api=1&travelmode=driving&layer=traffic&destination=[YOUR_LAT],[YOUR_LNG]");
+            window.open("https://goo.gl/maps/82k9DUF3gRQvXPQ77");
         else
         {
             if (map.style.display=="none")
