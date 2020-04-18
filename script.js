@@ -133,6 +133,7 @@ window.setTimeout(function () {
 
 
 
+
 function initPage() {
     let popup = document.getElementById("popup1");
     let popupBtn = document.getElementById("showPopupBtn");
@@ -155,6 +156,16 @@ function initPage() {
 
     document.body.classList.add('loaded_hiding');
 
+    let map_btn = document.getElementById("map_link");
+    let map = document.getElementById("map_frame");
+    map_btn.onclick =OpenMap;
+    window.addEventListener("scroll", function (event) {
+        let scroll = this.scrollY;
+        if (scroll > 500)
+            upbtn.className = "show";
+        else
+            upbtn.className = "";
+    });
     function ShowPopup() {
         popup.style.display = 'block';
     }
@@ -163,12 +174,24 @@ function initPage() {
         popup.style.display = 'none';
     }
 
-    window.addEventListener("scroll", function (event) {
-        let scroll = this.scrollY;
-        if (scroll > 500)
-            upbtn.className = "show";
+    function OpenMap(){
+        // If it's an iPhone..
+        if( (navigator.platform.indexOf("iPhone") != -1)
+            || (navigator.platform.indexOf("iPod") != -1)
+            || (navigator.platform.indexOf("iPad") != -1))
+            window.open("maps://www.google.com/maps/dir/?api=1&travelmode=driving&layer=traffic&destination=[YOUR_LAT],[YOUR_LNG]");
         else
-            upbtn.className = "";
-    });
+        {
+            if (map.style.display=="none")
+            {
+                map.style.display="block";
+                EPPZScrollTo.scrollVerticalToElementById('map_frame', 1);
+            }
+            else
+                map.style.display="none";
+        }
+    }
+
+
 
 }

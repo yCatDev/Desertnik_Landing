@@ -58,9 +58,9 @@ footer {
     flex-flow: column wrap;
     /* This aligns items to the end line on main-axis */
     background-image: url("./img/footer.png");
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     justify-content: flex-start;
 
     background-color: #000a12;
@@ -407,7 +407,20 @@ footer {
     text-align: center;
 }
 
+#map_frame
+{
+    display: none;
+    margin: 0 auto;
+    width: 600px;
+    height: 450px;
+}
 
+#map_link
+{
+    cursor: pointer;
+    font-style: italic;
+    text-shadow: 1px 1px 2px black;
+}
 
 #motto {
 / / text-align: center;
