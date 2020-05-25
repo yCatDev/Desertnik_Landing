@@ -176,7 +176,7 @@ function initPage() {
 
     function OpenMap(){
         if(navigator.userAgent.match('Mobile') != null)
-            window.open("https://goo.gl/maps/82k9DUF3gRQvXPQ77");
+            window.open("maps://www.google.com/maps/dir/?api=1&travelmode=driving&layer=traffic&destination=[YOUR_LAT],[YOUR_LNG]");
         else
         {
             if (map.style.display=="none")
