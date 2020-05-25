@@ -175,7 +175,6 @@ function initPage() {
     }
 
     function OpenMap(){
-        // If it's an iPhone..
         if(navigator.userAgent.match('Mobile') != null)
             window.open("https://goo.gl/maps/82k9DUF3gRQvXPQ77");
         else

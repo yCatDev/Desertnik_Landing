@@ -56,7 +56,7 @@ nav{
 footer {
     display: flex;
     flex-flow: column wrap;
-    /* This aligns items to the end line on main-axis */
+
     background-image: url("./img/footer.png");
     background-position: bottom;
     background-repeat: no-repeat;
@@ -244,14 +244,12 @@ footer {
     background-color: #eceff1;
     border-radius: 50px;
     padding: 50px;
-/ / height: 400 px;
     overflow: hidden;
 }
 
 .container:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-/ / height: 30 %;
 }
 
 .container_text {
@@ -322,16 +320,16 @@ footer {
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0); /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 /*Ids*/
@@ -362,7 +360,7 @@ footer {
 #about {
     display: flex;
     flex-flow: column wrap;
-    /* This aligns items to the end line on main-axis */
+
     justify-content: flex-start;
 
     background-image: url("./img/img2.png");
@@ -586,7 +584,7 @@ footer {
     overflow: auto;
     display: flex;
     flex-flow: column wrap;
-    /* This aligns items to the end line on main-axis */
+
     justify-content: center;
 }
 
@@ -611,16 +609,16 @@ footer {
 
 /*Preloader*/
 .preloader {
-    /*фиксированное позиционирование*/
+
     position: fixed;
-    /* координаты положения */
+
     left: 0;
     top: 0;
     right: 0;
     bottom: 0;
-    /* фоновый цвет элемента */
+
     background: #e0e0e0;
-    /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+
     z-index: 1001;
 }
 
