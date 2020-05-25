@@ -820,4 +820,7 @@ footer {
         margin: 0;
         padding: 10px;
     }
+    .blurred {
+        filter: blur(10px) contrast(80%);
+    }
 }
