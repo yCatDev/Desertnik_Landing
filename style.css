@@ -533,6 +533,36 @@ footer {
     display: none;
 }
 
+#email-input:valid
+{
+    border-color: green;
+}
+
+#email-input:invalid
+{
+    border-color: red;
+}
+
+#tel-input:valid
+{
+    border-color: green;
+}
+
+#tel-input:invalid
+{
+    border-color: red;
+}
+
+#name-input:valid
+{
+    border-color: green;
+}
+
+#name-input :invalid
+{
+    border-color: red;
+}
+
 .overlay {
     position: fixed;
     top: 0;
@@ -811,6 +841,7 @@ footer {
     }
 
 }
+
 @-moz-document url-prefix(){
     #particles
     {

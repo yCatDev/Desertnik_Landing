@@ -143,11 +143,13 @@ function initPage() {
     let productBtn = document.getElementById("productBtn");
     let footerBtn = document.getElementById("footerBtn");
     let upbtn = document.getElementById("up_button");
+    //let validateBtn = document.getElementById("validateBtn");
 
     aboutBtn.onclick = function () {EPPZScrollTo.scrollVerticalToElementById('about', 1);};
     productBtn.onclick = function () {EPPZScrollTo.scrollVerticalToElementById('products', 1);};
     footerBtn.onclick = function () {EPPZScrollTo.scrollVerticalToElementById('footer', 1);};
     upbtn.onclick = function () {EPPZScrollTo.scrollVerticalToElementById('header', 10);};
+    //validateBtn.onclick = function () {validate();};
 
     popupBtn.onclick = ShowPopup;
     for(let i = 0; i<buyBtns.length; i++)
@@ -190,6 +192,9 @@ function initPage() {
         }
     }
 
+    function validate() {
+
+    }
 
 
 }
